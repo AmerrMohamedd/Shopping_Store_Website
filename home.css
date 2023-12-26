@@ -1,0 +1,41 @@
+#header{
+    padding: 5px 650px;
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.849);
+}
+
+.logo {
+    max-width: 200PX;
+    height:auto;
+}
+
+.image-container {
+    display: flex;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+.image {
+    margin: 10px; 
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    max-width: 800px; 
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+.word {
+    margin-top: 10px; 
+    font-size: 30px; 
+}
+

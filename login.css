@@ -1,0 +1,164 @@
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 50px;
+    background: #e8e1e1;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    font-family: sans-serif;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    max-width: 100PX;
+    height: auto;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar ul li {
+    display: flex;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #00000069;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #00000069;
+    position: absolute;
+    bottom: -5px;
+    left: 20px;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.btn {
+    padding: .8rem 2.5em;
+    text-transform: uppercase;
+    background: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: rgb(163, 162, 162);
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.title h1 {
+    font-size: 3rem;
+}
+
+.title span {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    line-height: 2;
+}
+
+
+
+
+input,
+button,
+textarea {
+    outline: none;
+    border: 1px solid #9f9f9f44;
+    background: transparent;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+input[type=submit] {
+    cursor: pointer;
+}
+
+.form-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 4rem 0;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.form-container::before {
+    content: '';
+    position: absolute;
+    top: -5%;
+    left: -10px;
+    width: 255px;
+    height: 650px;
+    background-size: 255px;
+    background-repeat: no-repeat;
+    z-index: 10;
+}
+
+.form-container h1 {
+    text-transform: uppercase;
+    margin: 2rem 0;
+    font-size: 2.3rem;
+    text-align: center;
+}
+
+.form-container form {
+    width: 60%;
+    margin: 1rem auto;
+    background: rgb(255 255 255/80%);
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    position: relative;
+    border-radius: 5px;
+}
+
+.form-container form label {
+   
+    width: 100%;
+}
+
+.form-container form input {
+    width: 85%;
+}
